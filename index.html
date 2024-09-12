@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Knowledge</title>
+
+  <!-- Google Font Import for Protest Guerrilla -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap">
+
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Styling the navbar */
+    nav {
+      background-color: rgba(34, 34, 34, 1); /* Navbar background color */
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      box-shadow: 0px 4px 2px -2px gray;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Styling the nav items container */
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+    }
+
+    /* Styling individual nav items */
+    nav ul li {
+      position: relative;
+    }
+
+    /* Styling links */
+    nav ul li a {
+      text-decoration: none; /* Remove underline */
+      color: rgba(255, 203, 55, 1); /* Font color */
+      font-size: 16px; /* Default font size */
+      padding: 10px 15px;
+      display: block;
+      cursor: pointer; /* Cursor pointer on hover */
+    }
+
+    /* Dropdown items */
+    nav ul li ul {
+      position: absolute;
+      display: none;
+      top: 40px;
+      left: 0;
+      background-color: #fff;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    nav ul li ul li {
+      width: 150px;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    /* Navbar hover effects */
+    nav ul li a:hover {
+      background-color: #0073e6;
+      color: white;
+    }
+
+    /* Dropdown hover effect */
+    nav ul li ul li a:hover {
+      background-color: #f1f1f1;
+      color: #333;
+    }
+
+    /* Specific styling for the "Hindustan Times" */
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+    .logo h4 {
+      font-family: 'Protest Guerrilla', cursive;
+      font-size: 66px; /* Font size for "Hindustan Times" */
+      font-weight: 900; /* Bold font */
+      color: rgba(255, 203, 55, 1); /* Font color */
+      margin: 0; /* Remove default margin */
+      text-decoration: none; /* Remove underline */
+      cursor: pointer; /* Cursor pointer on hover */
+      text-align: center;
+    }
+
+    /* Body content styling */
+    .container {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      min-height: calc(100vh - 70px); /* Adjust min-height to ensure it covers remaining space */
+    }
+
+    .hero {
+      background-color: #fff;
+      padding: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: #333;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center; /* Center align the content */
+    }
+
+    .content .section {
+      width: 100%; /* Full width */
+      max-width: 1200px; /* Max width for large screens */
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      height: 30.6rem; /* Set height to 23.6rem */
+      overflow: auto; /* Handle overflow if content exceeds height */
+    }
+
+    .section h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      font-size: 18px;
+      color: #666;
+      line-height: 1.6;
+      word-wrap: break-word; /* Ensures long words break to the next line */
+      overflow-wrap: break-word; /* Provides compatibility with various browsers */
+    }
+
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .section h2 {
+        font-size: 24px;
+      }
+
+      .section p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <!-- Left links (can be empty or with other links) -->
+    <ul>
+      <li><a href="#">News</a>
+        <ul>
+          <li><a href="#">India</a></li>
+          <li><a href="#">World</a></li>
+          <li><a href="#">Cities</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Health</a></li>
+          <li><a href="#">Education</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Live</a></li>
+      <li><a href="#">Trending</a></li>
+    </ul>
+
+    <!-- Hindustan Times centered -->
+    <div class="logo-container">
+      <div class="logo">
+        <h4>Indian Knowledge</h4>
+      </div>
+    </div>
+
+    <!-- Right links -->
+    <ul>
+      <li><a href="#">Photos</a></li>
+      <li><a href="#">Subscribe</a></li>
+      <li><a href="#">Sign In</a></li>
+    </ul>
+  </nav>
+
+  <!-- Body Content -->
+  <div class="container">
+    <div class="hero">
+      <h1>Welcome to Indian Knowledge</h1>
+    </div>
+
+    <div class="content">
+      <div class="section">
+        <h2>Antartica</h2>
+        <p>Antartica 7th continent which is soo much dry that it is also considere as deser where no one lives which average temperature is -89C and wind speed of 300km/h...Around 350bc, one of the first person who talk about Antartica is a greek philosophers name aristotel who also know that earth is sphere and there is some place on north of earth name artic,they call it arctos derivded from bear constellation,they know that if some place name arctos is in north then some land is also in its opposit side mean in its southside so they called it antarctos means opposit of bear constellation,phraps human first steped on Antartica around 80s and 90s but alot before that Antartica can be visible on mapes. people know that there are some land in the south of earth but they don't know how big is it, is any kind of species are living there,its shape, so in 1530 AD when french explorer draw the world map they dred the rufed map and they name this place as 'Terra Australis incognita' means Unknown southern land,then in 1773 British mavel officer James Cook became the first person to go south of earth near Antartica but he does not goes on the land of Antartica, they go to south of earth but soon the returned to their home about 130km far from antartica after seeing glacoer even they doesn't see Antartica but they conclude that Terra Australis incognita exist and then they broudly said that "I CAN BE BOLD ENOUGH TO SAY NO MAN WILL EVER VENTURE FARTHER THAN I HAVE DONE AND THAT THE LANDS WHICH LIE TO THE SOUTH WILL NEVER BE EXPLORED" they are soo sure that no one can reach this place but it is false after 50 years of this event man steps on the Antartica,now who steps first is controversial because soo many people claimed that they are the first one to step on Antartica,like British army captain John Davis claimed that they are the first one to step on Antartica as their ship by mistake reached Antartica, another exaple of this is that a norwegian ship whose name is Antartica reached its costal region, people in that ship came to the costal region by life boat and goes to the land of Antartica, in this boat there is a norwegian name Carsten BorchGrevink  claimed that he is the first one to step on Antartica,moreover there are multiple people who claimed the same thing that they are the first one to step on Antartica.now if it is a continent then there must be some countries but no, not even a single country,factory,farming,driving,bomb testing sites and many more areas doesn't exist beacuse of antartic treaty sign by 12 most powerfull nation on 1 december 1959,which prohibit every single human activity except researching on the land of Antartica,which teach us that nothing is hard if we come together,if we use our power in right way,a diverse are can be prserve from any pollution,junk,radiation,carbon emmiton and all bad stuf.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
